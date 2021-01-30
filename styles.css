@@ -1,0 +1,96 @@
+
+/* -----------------------------------------------------------------------------
+
+  ROAM CSS BOILERPLATE - VARIABLES (v0.1.0) by @itsjustmath
+  -----------------------------------------
+
+  Usage:
+    Add to your [[roam/css]] page:
+      @import url('https://roam-css-boilerplate.glitch.me/vars.css'); (LOAD First)
+              OR     url('https://YOUR-PROJECT.glitch.me/vars.css');
+      @import url('https://roam-css-boilerplate.glitch.me/style.css');
+
+  Notes:
+    - prefix with `rm-`?
+    - combine into a single `root`?
+
+----------------------------------------------------------------------------- */
+
+
+/*-------------------------------
+  Shared Styles
+------------------------------- */
+
+:root {
+  --FONT-FAMILY: 'uppercase', /* for "local" variables */
+  --global__typography--font-family: 'iA Writer Quattro V', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --global__colors--text-color: initial; /* Placeholder */
+  --global__colors--bg-color: transparent /*rgb(247,247,247)*/;
+  --global__typography--font-size--base: 14px;
+}
+
+/*-------------------------------
+  Core
+------------------------------- */
+
+:root {
+  --base__layout--text-color: var(--global__colors--text-color);
+  --base__layout--bg-color: var(--global__colors--bg-color);
+  --base__layout--font-size: var(--global__typography--font-size--base);
+  --base__typography--font-family: var(--global__typography--font-family);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* TODO: dark styles */
+  }
+}
+
+/* -----------------------------------------------------------------------------
+  Elements
+----------------------------------------------------------------------------- */
+
+:root {
+  --elements__brackets--text-color: --global__colors--text-color;
+  --elements__inline-refs--bg-color: initial;
+  --elements__inline-refs--border-left-color: initial;
+  /* breadcrumbs, bullets, lines */
+}
+
+
+/* -----------------------------------------------------------------------------
+  Modules
+----------------------------------------------------------------------------- */
+
+/*-------------------------------
+  Kanban
+------------------------------- */
+:root {
+  --modules__kanban-board--bg-color: ;
+  --modules__kanban-column--bg-color: ;
+  --modules__kanban-card--bg-color: ;
+  --modules__kanban-title--border-color: ;
+}
+
+/* Buttons */
+:root {
+  --modules__buttons--bg-color: initial;
+  --modules__buttons--bg-color--hover: initial;
+  --modules__buttons--text-color: initial;
+  --modules__buttons--text-color--hover: initial;
+}
+
+/* Pomodoro */
+:root {
+  --modules__pomodoro--bg-color: ;
+  --modules__pomodoro--border-color: ;
+  --modules__pomodoro-running--color: ;
+  --modules__pomodoro-running--bg-color: ;
+}
+
+/* Help Menu */
+:root {
+  --modules__help-menu--bg-color: purple;
+  --modules__help-menu--text-color: green;
+  --modules__help-menu--font-size: 30px;
+}
